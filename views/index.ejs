@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline'" />
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://kit.fontawesome.com/0980d5bbf3.js "> -->
+    <title>Image Reader</title>
+    <link rel="stylesheet" href="../public/css/styles.css">
+
+    <link rel="stylesheet" href="/css/styles.css">
+
+</head>
+<body>
+
+    <div class="welcome-screen">
+        <div class="welcome-img">
+        </div>
+        <div class="welcome-div">
+            <p class="welcome-message">Welcome to Image Reader</p>
+            <p class="welcome-desc">A simple, reliable and easy way to backup images from your smartphone.</p>
+            <button class="btn" id="btn">Get started</button>
+        </div>
+    </div>
+
+    <div class="setup-screen">
+        <div class="instructions">
+            <p>To connect phone with desktop</p>
+            <ol>
+                <li><span> Scan QR code from your phone </span></li>
+            </ol>
+        </div>
+        <div class="form-qr">
+            <form id="myForm" action="/" method="post">
+                <input id="random-code" type="hidden" name="randomcode" value="" >
+                <!-- <input type="submit" value="Submit"> -->
+            </form>
+            <div id="qrcode">
+                <div class="to-reset">
+                    <i class="fa-thin fa-arrow-rotate-right" style="color: #008069;"></i>
+                    <p>Select to reload QR code</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+    <script src="../public/js/qrcode.min.js"></script>
+    <script src="../public/js/index.js"></script>
+
+    <script src="/js/qrcode.min.js"></script>
+    <script src="/js/index.js"></script>
+
+    <!-- <script src="https://kit.fontawesome.com/0980d5bbf3.js" crossorigin="anonymous"></script> -->
+</html>

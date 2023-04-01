@@ -1,0 +1,20 @@
+{
+  "name": "electron-app",
+  "productName": "Images Reader",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Pranshu Bhambri",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "ejs": "^3.1.9",
+    "ejs-electron": "^2.1.1",
+    "electron": "^23.1.4",
+    "express": "^4.18.2",
+    "toastify-js": "^1.12.0"
+  }
+}
